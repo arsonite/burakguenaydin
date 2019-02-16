@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
+import './style/subzero.css';
+
 //import { url } from './URL.json';
 
 class App extends Component {
