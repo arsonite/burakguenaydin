@@ -11,7 +11,9 @@ class App extends Component {
       <React.Fragment>
         <div id="toast_container" />
         <nav />
-        <main />
+        <main>
+          <p>This site is under construction</p>
+        </main>
       </React.Fragment>
     );
   }
