@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
+import NavBar from './components/navBar/navBar';
+import Navigation from './components/navBar/navigation';
+
 import './style/subzero.css';
 
 //import { url } from './URL.json';
@@ -10,10 +13,8 @@ class App extends Component {
     return (
       <React.Fragment>
         <div id="toast_container" />
-        <nav>I am learning backend right now so: </nav>
-        <main>
-          <p>This site is under construction</p>
-        </main>
+        <NavBar selectIndex={0} />
+        <main />
       </React.Fragment>
     );
   }

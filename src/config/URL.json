@@ -1,5 +1,9 @@
 {
   "url": {
-    "home": "/"
+    "home": "/",
+    "media": "/media",
+    "software": "/software",
+    "about me": "/about_me",
+    "imprint": "/imprint"
   }
 }

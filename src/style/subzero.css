@@ -1,6 +1,14 @@
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+}
 body #root nav {
-  background-color: #f00;
+  height: 75px;
+  background-color: #353535;
 }
 body #root main {
-  background-color: #0f0;
+  height: 500px;
+  margin: 50px;
+  background-color: #eee;
 }
