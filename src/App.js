@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <div id="toast_container" />
-        <nav>I am learning backend right now so:</nav>
+        <nav>I am learning backend right now so: LALALALALAL</nav>
         <main>
           <p>This site is under construction</p>
         </main>
