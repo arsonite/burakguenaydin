@@ -3,6 +3,12 @@
   width: 22%;
   height: 82px;
   border: none;
+  /*img {
+    display: block;
+    margin: 1em auto;
+    width: 50%;
+    height: 50%;
+  }*/
 }
 .navigation .navigation.current {
   margin-top: -7px;
@@ -10,9 +16,7 @@
   background-color: #56a95a;
   border-bottom: 7px solid #eee;
 }
-.navigation img {
-  display: block;
-  margin: 1em auto;
-  width: 50%;
-  height: 50%;
+.navigation p {
+  color: #fff;
+  text-decoration: none;
 }

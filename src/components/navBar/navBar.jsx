@@ -2,9 +2,9 @@ import React from 'react';
 
 import Navigation from './navigation';
 
-import './style/navBar.css';
-
 import { keys } from '../../config/nav.json';
+
+import './style/navBar.css';
 
 function NavBar(props) {
   let selectIndex = props.selectIndex;
