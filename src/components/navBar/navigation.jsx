@@ -16,11 +16,7 @@ function Navigation(props) {
       id={`nav_${name}`}
       className={`navigation${props.selected ? ' current' : ''}`}
     >
-      {props.isImage ? (
-        <img src={`${window.location.origin}/${props.name}`} alt="" />
-      ) : (
-        <p>{name}</p>
-      )}
+      {props.isImage ? <img src={`img/${name}_s.svg`} alt="" /> : name}
     </Link>
   );
 }
