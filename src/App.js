@@ -6,8 +6,6 @@ import Navigation from './components/navBar/navigation';
 
 import './style/subzero.css';
 
-const imgURL = window.location + 'img/';
-
 //import { url } from './URL.json';
 
 class App extends Component {
@@ -18,7 +16,7 @@ class App extends Component {
         <NavBar selectIndex={0} />
         <main />
         <div id="bg">
-          <img src="./img/pattern.png" alt="A subtle grey background pattern" />
+          <img src="./img/pattern.png" alt="" />
         </div>
       </React.Fragment>
     );
