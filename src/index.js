@@ -6,6 +6,8 @@ import PageEntry from './components/pageEntry/pageEntry';
 
 import * as serviceWorker from './services/serviceWorker';
 
+import './style/index.css';
+
 ReactDOM.render(
   <BrowserRouter>
     <PageEntry />

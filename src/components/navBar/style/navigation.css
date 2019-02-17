@@ -10,22 +10,24 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  color: #888;
-  text-align: center;
   border: none;
   border-right: 1px solid #444;
+  color: #888;
   background-color: #555;
   text-decoration: none;
+  text-align: center;
+  transition: all 0.5s;
 }
 .navigation img {
   height: 50%;
   width: 50%;
 }
+.navigation:hover {
+  background-color: #656565;
+}
 .navigation.current {
   margin-top: -7px;
+  color: #ff8800;
   background-color: #353535;
   border-bottom: 7px solid #ff8800;
-}
-.navigation.current p {
-  color: #ff8800;
 }

@@ -10,18 +10,20 @@ function Navigation(props) {
     props.name.substring(0, 1).toUpperCase() +
     props.name.substring(1, props.name.length);
 
+  const selected = props.selected;
+
   return (
     <Link
       to={`/${name.toLowerCase()}`}
       id={`nav_${name}`}
-      className={`navigation${props.selected ? ' current' : ''}`}
+      className={`navigation${selected ? ' current' : ''}`}
     >
-      {props.isImage ? (
+      {props.imgURL !== undefined ? (
         <img
           src={
             window.location.origin +
             '/' +
-            (props.selected ? name.replace(/\.svg/g, '_s.svg') : name)
+            (selected ? props.imgURL.replace(/\.svg/g, '_s.svg') : props.imgURL)
           }
           alt=""
         />

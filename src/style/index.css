@@ -5,37 +5,20 @@
 }
 body {
   overflow-x: hidden;
-  overflow-y: auto;
-  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
 }
-body #root main {
-  margin: 0 auto;
-  margin-top: 90px;
+body .container {
+  margin: 15px auto 0 auto;
   width: 80%;
-  height: 400px;
-  background-color: #fff;
-  box-shadow: 1px 0px 10px #ddd, -1px 0px 10px #ddd;
-  z-index: 1;
-}
-body #root #bg {
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  background: url('../img/pattern.png');
-  background-position: center;
-  background-repeat: repeat;
-  background-size: 10%;
+  color: #353535;
+  box-shadow: 2px 0px 10px #ddd, -2px 0px 10px #ddd;
 }
 /* Responsive media query, optimized for iPhone Plus/Samsung + Size */
 @media only screen and (max-width: 500px) {
-  body #root main {
+  body .container {
     margin: 0;
     width: 100%;
     box-shadow: 0px 0px 0px #000;
-  }
-  body #root #bg {
-    display: none;
   }
 }

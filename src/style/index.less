@@ -1,6 +1,6 @@
 /* Variables */
-@shadeL: 1px 0px 10px #ddd;
-@shadeR: -1px 0px 10px #ddd;
+@shadeL: 2px 0px 10px #ddd;
+@shadeR: -2px 0px 10px #ddd;
 
 * {
   padding: 0;
@@ -9,52 +9,27 @@
 
 body {
   overflow-x: hidden;
-  overflow-y: auto;
-  background-color: #fff;
 
-  #root {
-    main {
-      margin: 0 auto;
-      margin-top: 75px + 15px;
-      width: 80%;
-      height: 400px;
+  height: 100vh;
+  width: 100vw;
 
-      background-color: #fff;
-      box-shadow: @shadeL, @shadeR;
+  .container {
+    margin: 15px auto 0 auto;
+    width: 80%;
 
-      z-index: 1;
-    }
+    color: #353535;
 
-    #bg {
-      position: fixed;
-      top: 0;
-
-      height: 100%;
-      width: 100%;
-
-      z-index: -1;
-
-      background: url('../img/pattern.png');
-      background-position: center;
-      background-repeat: repeat;
-      background-size: 10%;
-    }
+    box-shadow: @shadeL, @shadeR;
   }
 }
 
 /* Responsive media query, optimized for iPhone Plus/Samsung + Size */
 @media only screen and (max-width: 500px) {
   body {
-    #root {
-      main {
-        margin: 0;
-        width: 100%;
-        box-shadow: 0px 0px 0px #000;
-      }
-
-      #bg {
-        display: none;
-      }
+    .container {
+      margin: 0;
+      width: 100%;
+      box-shadow: 0px 0px 0px #000;
     }
   }
 }

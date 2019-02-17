@@ -1,0 +1,40 @@
+#root {
+  height: 100%;
+  width: 100%;
+
+  main {
+    overflow-y: auto;
+
+    position: fixed;
+    top: 10%;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 1;
+  }
+
+  #bg {
+    position: fixed;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: -1;
+
+    background: url('../../../img/pattern.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 10%;
+  }
+}
+
+/* Responsive media query, optimized for iPhone Plus/Samsung + Size */
+@media only screen and (max-width: 500px) {
+  #root {
+    #bg {
+      display: none;
+    }
+  }
+}

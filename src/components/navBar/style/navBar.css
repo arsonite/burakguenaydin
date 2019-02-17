@@ -1,4 +1,3 @@
-/* Variables */
 nav {
   position: fixed;
   top: 0;
@@ -11,7 +10,6 @@ nav {
   margin: 0 auto;
   width: 80%;
   height: 10%;
-  box-shadow: 1px 0px 10px #ccc, -1px 0px 10px #ccc;
   background-color: #353535;
   z-index: 10;
 }

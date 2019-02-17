@@ -1,0 +1,13 @@
+#homeScreen {
+  height: 100%;
+}
+#homeScreen .container {
+  height: 50%;
+}
+#homeScreen .container:nth-child(even) {
+  color: #fff;
+  background-color: #353535;
+}
+#homeScreen .container:nth-child(odd) {
+  background-color: #fff;
+}

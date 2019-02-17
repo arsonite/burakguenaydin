@@ -7,17 +7,17 @@ import { url } from '../../config.json';
 import './style/navBar.css';
 
 function NavBar(props) {
-  let selectIndex = props.selectIndex;
-
   return (
     <nav>
       {Object.keys(url).map((key, i) => {
+        const isImage = !Array.isArray(url[key]);
+
         return (
           <Navigation
             key={key}
             name={key}
-            selected={i === selectIndex}
-            isImage={key.includes('img')}
+            imgURL={isImage ? url[key] : undefined}
+            selected={i === props.navigationIndex}
           />
         );
       })}
