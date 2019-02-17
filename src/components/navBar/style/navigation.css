@@ -1,3 +1,4 @@
+/* Variables */
 .navigation {
   -webkit-tap-highlight-color: transparent;
   width: 100%;
@@ -6,14 +7,21 @@
   background-color: #555;
   text-decoration: none;
 }
-.navigation p {
+.navigation p,
+.navigation img {
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+}
+.navigation p {
   color: #888;
   text-align: center;
+}
+.navigation img {
+  height: 50px;
+  width: 50px;
 }
 .navigation.current {
   margin-top: -7px;

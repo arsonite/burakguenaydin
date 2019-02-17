@@ -14,9 +14,7 @@ ReactDOM.render(
       <div id="toast_container" />
       <NavBar selectIndex={0} />
       <main />
-      <div id="bg">
-        <img src="./img/pattern.png" alt="" />
-      </div>
+      <div id="bg" />
     </React.Fragment>
   </BrowserRouter>,
   document.getElementById('root')
