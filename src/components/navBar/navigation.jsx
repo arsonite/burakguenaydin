@@ -10,6 +10,8 @@ function Navigation(props) {
   let name = props.name.replace(/img\//g, '').replace(/.svg/g, '');
   name = name.substring(0, 1).toUpperCase() + name.substring(1, name.length);
 
+  console.log(`${window.location.origin}/img/${name}_s.svg`);
+
   return (
     <Link
       to={`/${name.toLowerCase()}`}
