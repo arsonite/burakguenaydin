@@ -12,7 +12,14 @@ function NavBar(props) {
   return (
     <nav>
       {keys.map((key, i) => {
-        return <Navigation key={key} name={key} selected={i === selectIndex} />;
+        return (
+          <Navigation
+            key={key}
+            name={key}
+            selected={i === selectIndex}
+            isImage={key.includes('*')}
+          />
+        );
       })}
     </nav>
   );

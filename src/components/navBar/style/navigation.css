@@ -1,8 +1,8 @@
 .navigation {
   -webkit-tap-highlight-color: transparent;
-  height: 100%;
   width: 100%;
   border: none;
+  border-right: 1px solid #444;
   background-color: #555;
   text-decoration: none;
 }
@@ -16,11 +16,7 @@
   text-align: center;
 }
 .navigation.current {
-  /*
-  background-color: #56a95a;
-  */
   margin-top: -7px;
-  margin-bottom: -7px;
   background-color: #353535;
   border-bottom: 7px solid #ff8800;
 }
