@@ -32,6 +32,7 @@ class PageEntry extends Component {
           navigationIndex={this.state.navigationIndex}
           scrollOffset={this.state.scroll}
         />
+
         <main
           onScroll={event => {
             const e = event.target;
@@ -98,6 +99,7 @@ class PageEntry extends Component {
 
           <footer>footer</footer>
         </main>
+
         <div id="bg" />
       </React.Fragment>
     );

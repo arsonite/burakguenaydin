@@ -2,11 +2,21 @@
   overflow-y: auto;
   position: fixed;
   top: 15%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   box-sizing: border-box;
   padding: 0 10%;
   height: 100%;
   width: 100%;
   transition: all 0.5s;
+  z-index: 1;
+}
+#root main footer {
+  flex-shrink: 0;
+  width: 100%;
+  background-color: #893712;
+  text-align: center;
   z-index: 1;
 }
 #root main.scrollOffset {
