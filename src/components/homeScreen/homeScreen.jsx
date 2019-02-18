@@ -7,12 +7,6 @@ class HomeScreen extends Component {
 
   state = {};
 
-  /*
-  constructor() {
-    super();
-  }
-  */
-
   componentDidMount() {
     this.props.updateNavigationIndex(this.props.navigationIndex);
     this._isMounted = true;

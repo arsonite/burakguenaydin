@@ -16,10 +16,8 @@
   margin: 0 auto;
 
   border: none;
-  border-right: 1px solid #444;
 
   color: #888;
-  background-color: #555;
   text-decoration: none;
   text-align: center;
 
@@ -32,10 +30,28 @@
 }
 
 .navigation:hover {
-  background-color: #656565;
+  color: #ccc;
 }
 
 .navigation.current {
+  margin-top: -@border-height;
+
+  color: #353535;
+  border-bottom: @border-height solid #353535;
+}
+
+.navigation.scrollOffset {
+  border-right: 1px solid #444;
+
+  color: #888;
+  background-color: #555;
+}
+
+.navigation.scrollOffset:hover {
+  background-color: #777;
+}
+
+.navigation.scrollOffset.current {
   margin-top: -@border-height;
 
   color: #ff8800;

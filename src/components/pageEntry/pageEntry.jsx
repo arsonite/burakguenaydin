@@ -14,8 +14,11 @@ import './style/pageEntry.css';
 
 class PageEntry extends Component {
   state = {
-    navigationIndex: undefined
+    navigationIndex: undefined,
+    scroll: false
   };
+
+  componentDidMount() {}
 
   updateNavigationIndex = index => {
     this.setState({ navigationIndex: index });
@@ -25,8 +28,17 @@ class PageEntry extends Component {
     return (
       <React.Fragment>
         <div id="toast_container" />
-        <NavBar navigationIndex={this.state.navigationIndex} />
-        <main>
+        <NavBar
+          navigationIndex={this.state.navigationIndex}
+          scrollOffset={this.state.scroll}
+        />
+        <main
+          onScroll={event => {
+            const e = event.target;
+            this.setState({ scroll: e.scrollTop > e.offsetHeight / 25 });
+          }}
+          className={this.state.scroll ? ' scrollOffset' : ''}
+        >
           <Switch>
             <Route
               path={`/${Object.keys(url)[0]}`}

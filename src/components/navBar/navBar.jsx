@@ -8,7 +8,7 @@ import './style/navBar.css';
 
 function NavBar(props) {
   return (
-    <nav>
+    <nav className={props.scrollOffset ? 'scrollOffset' : ''}>
       {Object.keys(url).map((key, i) => {
         const isImage = !Array.isArray(url[key]);
 
@@ -18,6 +18,7 @@ function NavBar(props) {
             name={key}
             imgURL={isImage ? url[key] : undefined}
             selected={i === props.navigationIndex}
+            scrollOffset={props.scrollOffset}
           />
         );
       })}

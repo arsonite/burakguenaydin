@@ -1,14 +1,14 @@
-#root {
-  height: 100%;
-  width: 100%;
-}
 #root main {
   overflow-y: auto;
   position: fixed;
-  top: 10%;
+  top: 15%;
   height: 100%;
   width: 100%;
+  transition: all 0.5s;
   z-index: 1;
+}
+#root main.scrollOffset {
+  top: 5%;
 }
 #root #bg {
   position: fixed;

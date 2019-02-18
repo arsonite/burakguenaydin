@@ -16,7 +16,9 @@ function Navigation(props) {
     <Link
       to={`/${name.toLowerCase()}`}
       id={`nav_${name}`}
-      className={`navigation${selected ? ' current' : ''}`}
+      className={`navigation${props.scrollOffset ? ' scrollOffset' : ''}${
+        selected ? ' current' : ''
+      }`}
     >
       {props.imgURL !== undefined ? (
         <img
