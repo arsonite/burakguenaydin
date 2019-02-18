@@ -4,6 +4,7 @@
   font-family: Gothic;
   src: url(../res/fonts/century_gothic.ttf);
 }
+/* Custom-font: Cornerstone */
 @font-face {
   font-family: Cornerstone;
   src: url(../res/fonts/cornerstone.ttf);
