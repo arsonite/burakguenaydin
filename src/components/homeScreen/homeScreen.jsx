@@ -17,14 +17,7 @@ class HomeScreen extends Component {
   }
 
   render() {
-    return (
-      <div id="homeScreen">
-        <div className="container">Home</div>
-        <div className="container">Home</div>
-        <div className="container">Home</div>
-        <div className="container">Home</div>
-      </div>
-    );
+    return <div id="homeScreen" className="screen" />;
   }
 }
 

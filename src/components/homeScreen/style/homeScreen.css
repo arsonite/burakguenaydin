@@ -1,8 +1,5 @@
-#homeScreen {
-  height: 100%;
-}
 #homeScreen .container {
-  height: 50%;
+  height: 400px;
 }
 #homeScreen .container:nth-child(even) {
   color: #fff;

@@ -12,6 +12,14 @@ import { url } from '../../config.json';
 
 import './style/pageEntry.css';
 
+const components = [
+  HomeScreen,
+  MediaScreen,
+  SoftwareScreen,
+  HardwareScreen,
+  ContactScreen
+];
+
 class PageEntry extends Component {
   state = {
     navigationIndex: undefined,
@@ -41,63 +49,72 @@ class PageEntry extends Component {
           className={this.state.scroll ? ' scrollOffset' : ''}
         >
           <Switch>
-            <Route
-              path={`/${Object.keys(url)[0]}`}
-              render={props => (
-                <HomeScreen
-                  {...props}
-                  navigationIndex={0}
-                  updateNavigationIndex={this.updateNavigationIndex}
+            {components.map((Component, i) => {
+              return (
+                <Route
+                  key={i}
+                  path={`/${Object.keys(url)[i]}`}
+                  render={props => (
+                    <Component
+                      {...props}
+                      key={i}
+                      navigationIndex={i}
+                      updateNavigationIndex={this.updateNavigationIndex}
+                    />
+                  )}
                 />
-              )}
-            />
-
-            <Route
-              path={`/${Object.keys(url)[1]}`}
-              render={props => (
-                <MediaScreen
-                  {...props}
-                  navigationIndex={1}
-                  updateNavigationIndex={this.updateNavigationIndex}
-                />
-              )}
-            />
-
-            <Route
-              path={`/${Object.keys(url)[2]}`}
-              render={props => (
-                <SoftwareScreen
-                  {...props}
-                  navigationIndex={2}
-                  updateNavigationIndex={this.updateNavigationIndex}
-                />
-              )}
-            />
-
-            <Route
-              path={`/${Object.keys(url)[3]}`}
-              render={props => (
-                <HardwareScreen
-                  {...props}
-                  navigationIndex={3}
-                  updateNavigationIndex={this.updateNavigationIndex}
-                />
-              )}
-            />
-
-            <Route
-              path={`/${Object.keys(url)[4]}`}
-              render={props => (
-                <ContactScreen
-                  {...props}
-                  navigationIndex={4}
-                  updateNavigationIndex={this.updateNavigationIndex}
-                />
-              )}
+              );
+            })}
             />
           </Switch>
 
-          <footer>footer</footer>
+          <footer>
+            <div className="box">
+              <p>Contact</p>
+              <div className="contacts">
+                <div className="form">
+                  You have
+                  <a href="mailto:guenaydin.burak@gmail.com?subject=Question&body=I have a question about you..">
+                    a question?
+                  </a>
+                </div>
+
+                <div className="form">
+                  Or
+                  <a href="mailto:guenaydin.burak@gmail.com?subject=Suggestion&body=I have a suggestion for your website...">
+                    a suggestion?
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <div className="box">
+              <p>Social</p>
+              <div className="images">
+                <a href="https://github.com/arsonite">
+                  <img src="./img/logos/github.svg" alt="" />
+                </a>
+                <a href="https://twitter.com/notarsonite">
+                  <img src="./img/logos/twitter.svg" alt="" />
+                </a>
+                <img src="./img/logos/linkedin.svg" alt="" />
+                <img src="./img/logos/xing.svg" alt="" />
+              </div>
+            </div>
+
+            <hr />
+
+            <div className="box">
+              <p>Language</p>
+              <div className="languages">
+                <img src="./img/flag_de.png" alt="" />
+                <img src="./img/flag_en.png" alt="" />
+                <img src="./img/flag_tr.png" alt="" />
+              </div>
+            </div>
+          </footer>
         </main>
 
         <div id="bg" />

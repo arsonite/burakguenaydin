@@ -10,7 +10,7 @@
 
     box-sizing: border-box;
 
-    padding: 0 10%;
+    padding: 0 10% 2.2em 10%;
     height: 100%;
     width: 100%;
 
@@ -19,14 +19,78 @@
     z-index: 1;
 
     footer {
+      display: flex;
+      flex-direction: row;
       flex-shrink: 0;
+      bottom: 0;
 
+      height: 100px;
       width: 100%;
 
-      background-color: #893712;
+      background-color: #353535;
       text-align: center;
 
       z-index: 1;
+
+      .box {
+        display: flex;
+        flex: 1 1 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        margin: 3% 0;
+
+        color: #fff;
+
+        p {
+          text-align: center;
+          right: 0;
+          left: 0;
+          width: 100%;
+          margin: 0 auto;
+        }
+
+        .contacts,
+        .images,
+        .languages {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .contacts {
+          a {
+            padding-left: 5px;
+            color: #ff8800;
+          }
+        }
+
+        .languages {
+          img {
+            border-width: 2px;
+            border-style: solid;
+            border-color: transparent;
+          }
+
+          img:hover {
+            border-color: #fff;
+          }
+        }
+
+        img {
+          margin: 5px;
+          height: 1.5rem;
+        }
+
+        img:hover {
+          cursor: pointer;
+        }
+      }
+
+      hr {
+        margin: 3% 0;
+        border: 0.05em solid #444;
+      }
     }
   }
 
@@ -55,6 +119,9 @@
   #root {
     main {
       top: 10%;
+
+      padding-left: 0;
+      padding-right: 0;
       width: 100%;
     }
   }

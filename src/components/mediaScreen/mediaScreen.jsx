@@ -20,7 +20,7 @@ class MediaScreen extends Component {
 
   render() {
     return (
-      <div id="mediaScreen">
+      <div id="mediaScreen" className="screen">
         <div className="container">
           <Thumbnail />
         </div>
