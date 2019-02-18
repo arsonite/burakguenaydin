@@ -96,7 +96,7 @@ class PageEntry extends Component {
             />
           </Switch>
 
-          <footer />
+          <footer>footer</footer>
         </main>
         <div id="bg" />
       </React.Fragment>

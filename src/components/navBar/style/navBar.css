@@ -20,6 +20,7 @@ nav.scrollOffset {
 }
 @media only screen and (max-width: 500px) {
   nav {
+    top: 0;
     margin: 0;
     width: 100%;
   }
