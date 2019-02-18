@@ -1,4 +1,12 @@
 /* Variables */
+/* Special navigation buttons */
+.navigation.home {
+  width: 100%;
+}
+.navigation.placeholder {
+  display: none;
+}
+/* Navigation before onScroll-event fired */
 .navigation {
   -webkit-tap-highlight-color: transparent;
   display: flex;
@@ -28,6 +36,7 @@
   color: #353535;
   border-bottom: 7px solid #353535;
 }
+/* Navigation after onScroll-event fired */
 .navigation.scrollOffset {
   border-right: 1px solid #444;
   color: #888;
@@ -41,4 +50,26 @@
   color: #ff8800;
   background-color: #353535;
   border-bottom: 7px solid #ff8800;
+}
+@media only screen and (min-width: 500px) {
+  .navigation.placeholder {
+    display: block;
+  }
+  .navigation.home {
+    width: 134%;
+  }
+  .navigation.home.current {
+    margin-top: 0;
+    color: none;
+    border-bottom: none;
+  }
+  .navigation.placeholder {
+    width: 134%;
+  }
+  .navigation.placeholder:hover {
+    cursor: default;
+  }
+  .navigation.placeholder.scrollOffset:hover {
+    background-color: #555;
+  }
 }

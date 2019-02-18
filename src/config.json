@@ -5,6 +5,7 @@
     "media": ["animation", "post-processing", "graphics-design"],
     "software": ["projects", "frontend", "backend"],
     "blog": ["raspberry_pi", "arduino"],
-    "contact": ["cv", "imprint", "privacy"]
+    "contact": ["cv", "imprint", "privacy"],
+    "placeholder": []
   }
 }

@@ -72,19 +72,10 @@ class PageEntry extends Component {
             <div className="box">
               <p>Contact</p>
               <div className="contacts">
-                <div className="form">
-                  You have
-                  <a href="mailto:guenaydin.burak@gmail.com?subject=Question&body=I have a question about you..">
-                    a question?
-                  </a>
-                </div>
-
-                <div className="form">
-                  Or
-                  <a href="mailto:guenaydin.burak@gmail.com?subject=Suggestion&body=I have a suggestion for your website...">
-                    a suggestion?
-                  </a>
-                </div>
+                You have
+                <a href="mailto:guenaydin.burak@gmail.com?subject=Question&body=I have a question about you..">
+                  a question?
+                </a>
               </div>
             </div>
 

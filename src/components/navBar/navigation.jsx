@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { url } from '../../config.json';
-
 import './style/navigation.css';
 
 function Navigation(props) {
@@ -10,25 +8,33 @@ function Navigation(props) {
     props.name.substring(0, 1).toUpperCase() +
     props.name.substring(1, props.name.length);
 
-  const selected = props.selected;
+  const isSelected = props.selected;
+  const isHome = props.imgURL !== undefined;
+  const isPlaceholder = props.name === 'placeholder';
 
   return (
     <Link
-      to={`/${name.toLowerCase()}`}
+      to={isPlaceholder ? '#' : '/' + name.toLowerCase()}
       id={`nav_${name}`}
-      className={`navigation${props.scrollOffset ? ' scrollOffset' : ''}${
-        selected ? ' current' : ''
-      }`}
+      className={`navigation
+      ${isPlaceholder ? ' placeholder' : ''}
+      ${isHome ? ' home' : ''}
+      ${props.scrollOffset ? ' scrollOffset' : ''}
+      ${isSelected ? ' current' : ''}`}
     >
-      {props.imgURL !== undefined ? (
+      {isHome ? (
         <img
           src={
             window.location.origin +
             '/' +
-            (selected ? props.imgURL.replace(/\.svg/g, '_s.svg') : props.imgURL)
+            (isSelected
+              ? props.imgURL.replace(/\.svg/g, '_s.svg')
+              : props.imgURL)
           }
           alt=""
         />
+      ) : isPlaceholder ? (
+        ''
       ) : (
         name
       )}
