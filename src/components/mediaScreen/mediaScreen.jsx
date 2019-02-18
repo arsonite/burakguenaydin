@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Thumbnail from '../common/thumbnail';
+
 import './style/mediaScreen.css';
 
 class MediaScreen extends Component {
@@ -18,8 +20,14 @@ class MediaScreen extends Component {
 
   render() {
     return (
-      <div id="mediaScreen" className="container">
-        Media
+      <div id="mediaScreen">
+        <div className="container">
+          <Thumbnail />
+        </div>
+
+        <div className="container">
+          <Thumbnail />
+        </div>
       </div>
     );
   }

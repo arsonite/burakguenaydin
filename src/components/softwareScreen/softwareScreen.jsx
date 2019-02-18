@@ -17,11 +17,7 @@ class SoftwareScreen extends Component {
   }
 
   render() {
-    return (
-      <div id="softwareScreen" className="container">
-        Software
-      </div>
-    );
+    return <div id="softwareScreen" />;
   }
 }
 

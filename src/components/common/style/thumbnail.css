@@ -1,0 +1,25 @@
+.thumbnail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+.thumbnail .image {
+  width: 50%;
+  background-color: #f00;
+}
+.thumbnail .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.thumbnail .information .text {
+  height: 80%;
+  background-color: #0f0;
+}
+.thumbnail .information .linker {
+  height: 20%;
+  background-color: #00f;
+}

@@ -17,11 +17,7 @@ class HardwareScreen extends Component {
   }
 
   render() {
-    return (
-      <div id="hardwareScreen" className="container">
-        Hardware
-      </div>
-    );
+    return <div id="hardwareScreen" />;
   }
 }
 

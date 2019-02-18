@@ -17,11 +17,7 @@ class ContactScreen extends Component {
   }
 
   render() {
-    return (
-      <div id="contactScreen" className="container">
-        Contact
-      </div>
-    );
+    return <div id="contactScreen" />;
   }
 }
 

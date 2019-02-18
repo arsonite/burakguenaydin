@@ -1,4 +1,4 @@
-#mediaScreen {
-  height: 50%;
+#mediaScreen .container {
+  height: 400px;
   background-color: #fff;
 }
