@@ -1,17 +1,16 @@
 import React from 'react';
 
-import './style/thumbnail.css';
+import './style/card.css';
 
-function Thumbnail(props) {
+function Card(props) {
   return (
-    <div className="thumbnail">
-      <div className="image" />
-      <div className="information">
-        <div className="text" />
-        <div className="linker" />
+    <div className="card">
+      <div className="title" />
+      <div className="image">
+        <img href="/" src="" alt="" />
       </div>
     </div>
   );
 }
 
-export default Thumbnail;
+export default Card;
