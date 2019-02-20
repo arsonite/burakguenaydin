@@ -10,6 +10,7 @@ function Navigation(props) {
     props.name.substring(0, 1).toUpperCase() +
     props.name.substring(1, props.name.length);
 
+  const scrollOffset = props.scrollOffset;
   const isSelected = props.selected;
   const isPlaceholder = props.isPlaceholder;
 
@@ -19,7 +20,7 @@ function Navigation(props) {
       id={`nav_${name}`}
       className={`navigation
       ${isPlaceholder ? ' placeholder' : ''}
-      ${props.scrollOffset ? ' scrollOffset' : ''}
+      ${scrollOffset ? ' scrollOffset' : ''}
       ${isSelected ? ' current' : ''}`}
     >
       {props.imgURL !== undefined ? (

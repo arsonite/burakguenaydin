@@ -19,12 +19,7 @@ function Thumbnail(props) {
             Anteposuerit litterarum formas humanitatis per seacula quarta decima
             et quinta decima eodem modo; typi qui nunc. Feugait nulla facilisi
             nam liber, tempor cum soluta nobis eleifend option congue nihil
-            imperdiet doming. Aliquip ex ea commodo consequat duis autem vel eum
-            iriure? Qui sequitur mutationem consuetudium lectorum mirum est
-            notare quam littera gothica quam, nunc putamus parum. Eodem modo
-            typi qui nunc nobis videntur parum clari fiant sollemnes in. Ut wisi
-            enim ad minim veniam quis nostrud exerci tation ullamcorper
-            suscipit.
+            imperdiet doming.
           </div>
         </div>
 

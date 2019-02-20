@@ -17,6 +17,9 @@
   font-family: Gothic;
   font-size: 14px;
 }
+.hidden {
+  display: none;
+}
 body {
   overflow-x: hidden;
 }

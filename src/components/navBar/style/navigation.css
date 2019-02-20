@@ -3,12 +3,16 @@
 .navigation.placeholder {
   display: none;
 }
+.navigation.placeholder:after {
+  display: none;
+}
 .navigation.placeholder.scrollOffset:hover {
   border-bottom: none;
 }
 /* Navigation before onScroll-event fired */
 .navigation {
   -webkit-tap-highlight-color: transparent;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +26,7 @@
   color: #888;
   text-decoration: none;
   text-align: center;
+  -webkit-transition: all 0.5;
   transition: all 0.5s;
 }
 .navigation img {
@@ -34,6 +39,26 @@
 .navigation.current {
   margin-top: 14px;
   color: #353535;
+}
+/* Trick to workout top-border with margin */
+.navigation:after {
+  content: '';
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  bottom: 200%;
+  transform: translateX(-50%);
+  border-bottom: 50px solid #353535;
+  -webkit-transition: all 0.25;
+  transition: all 0.25s;
+}
+.navigation:hover:after {
+  bottom: 100%;
+  border-bottom: 50px solid #888;
+}
+.navigation.current:after {
+  bottom: 100%;
+  border-bottom: 50px solid #353535;
 }
 /* Navigation after onScroll-event fired */
 .navigation.scrollOffset {

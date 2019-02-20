@@ -1,7 +1,18 @@
 .card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
+}
+.card .title {
+  height: 20%;
+  width: 100%;
+  background-color: #353535;
+  line-height: 500%;
+  text-align: center;
+}
+.card .image {
+  height: 80%;
+  width: 100%;
 }
