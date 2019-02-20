@@ -1,34 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './style/thumbnail.css';
 
-function Thumbnail(props) {
-  return (
-    <div className="thumbnail">
-      <div className="image">
-        <img src="" alt="" />
-      </div>
+class Thumbnail extends Component {
+  state = {};
 
-      <div className="information">
-        <div className="text">
-          <span className="overtitle">Overtitle</span>
-          <span className="title">Title</span>
-          <div className="content">
-            Adipiscing elit sed diam nonummy nibh euismod tincidunt ut. Quis
-            nostrud exerci, tation ullamcorper suscipit lobortis nisl.
-            Anteposuerit litterarum formas humanitatis per seacula quarta decima
-            et quinta decima eodem modo; typi qui nunc. Feugait nulla facilisi
-            nam liber, tempor cum soluta nobis eleifend option congue nihil
-            imperdiet doming.
+  render() {
+    return (
+      <div className="container">
+        <div className="thumbnail">
+          <div className="image">
+            <img src={this.props.src} alt="" />
+          </div>
+
+          <div className="information">
+            <div className="text">
+              <div className="title">Title</div>
+              <div className="content">
+                Adipiscing elit sed diam nonummy nibh euismod tincidunt ut. Quis
+                nostrud exerci, tation ullamcorper suscipit lobortis nisl.
+                Anteposuerit litterarum formas humanitatis per seacula quarta
+                decima et quinta decima eodem modo; typi qui nunc.
+              </div>
+            </div>
+
+            <div className="linker">{'Explore >'}</div>
           </div>
         </div>
-
-        <div className="linker">
-          <div />
-        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Thumbnail;

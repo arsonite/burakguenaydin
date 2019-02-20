@@ -6,8 +6,13 @@
   height: 100%;
 }
 .thumbnail .image {
-  width: 50%;
-  background-color: #0f0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.thumbnail .image img {
+  max-height: 200%;
+  max-width: 200%;
 }
 .thumbnail .information {
   display: flex;
@@ -16,11 +21,21 @@
   width: 50%;
 }
 .thumbnail .information .text {
-  height: 80%;
-  color: #353535;
+  height: 100%;
   background-color: #fff;
+}
+.thumbnail .information .text .title,
+.thumbnail .information .text .content {
+  color: #353535;
+}
+.thumbnail .information .text .title {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 .thumbnail .information .linker {
   height: 20%;
+  text-align: center;
+  font-family: Cornerstone;
   background-color: #353535;
 }

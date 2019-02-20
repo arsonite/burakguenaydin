@@ -3,16 +3,59 @@
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
-  height: 100%;
+  height: 400px;
+  transition: all 0.5s;
 }
 .card .title {
+  display: flex;
   height: 20%;
   width: 100%;
   background-color: #353535;
-  line-height: 500%;
+}
+.card .title p {
+  margin: auto;
+  width: 100%;
   text-align: center;
+  font-family: Cornerstone;
+  font-size: 28px;
+}
+.card .title div {
+  height: 100%;
+  width: 20%;
+  background-color: #444;
+  transition: all 0.25s;
+}
+.card .title div img {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  top: 25%;
+  margin: auto;
+  height: 50%;
+  width: 50%;
+  transform: rotateZ(90deg);
+  transition: all 0.5s;
+}
+.card .title div:hover {
+  cursor: pointer;
+  color: #ff8800;
+  background-color: #555;
 }
 .card .image {
-  height: 80%;
+  overflow: hidden;
+  height: 100%;
   width: 100%;
+}
+.card .image img {
+  height: auto;
+  max-width: 100%;
+}
+.card.selected {
+  height: 200px;
+}
+.card.selected .title div img {
+  transform: rotateZ(270deg);
+}
+.card.selected .image img {
+  height: 0;
 }

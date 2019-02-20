@@ -30,7 +30,6 @@ body .screen {
 body .container {
   margin: 5% auto;
   width: 100%;
-  color: #353535;
   box-shadow: 2px 0px 10px #ddd, -2px 0px 10px #ddd;
 }
 /* Responsive media query, optimized for iPhone Plus/Samsung + Size */

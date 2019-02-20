@@ -22,13 +22,9 @@ class MediaScreen extends Component {
   render() {
     return (
       <div id="mediaScreen" className="screen">
-        <div className="container">
-          <Card />
-        </div>
+        <Card src="https://picsum.photos/1000" />
 
-        <div className="container">
-          <Thumbnail />
-        </div>
+        <Thumbnail src="https://picsum.photos/2000" />
       </div>
     );
   }
