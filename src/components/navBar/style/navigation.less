@@ -1,13 +1,13 @@
 /* Variables */
 @border-height: 7px;
 
-/* Special navigation buttons */
-.navigation.home {
-  width: 100%;
-}
-
+/* Placeholder buttons */
 .navigation.placeholder {
   display: none;
+}
+
+.navigation.placeholder.scrollOffset:hover {
+  border-bottom: none;
 }
 
 /* Navigation before onScroll-event fired */
@@ -44,10 +44,9 @@
 }
 
 .navigation.current {
-  margin-top: -@border-height;
+  margin-top: @border-height*2;
 
   color: #353535;
-  border-bottom: @border-height solid #353535;
 }
 
 /* Navigation after onScroll-event fired */
@@ -58,11 +57,8 @@
   background-color: #555;
 }
 
+.navigation.scrollOffset.current,
 .navigation.scrollOffset:hover {
-  background-color: #777;
-}
-
-.navigation.scrollOffset.current {
   margin-top: -@border-height;
 
   color: #ff8800;
@@ -75,19 +71,8 @@
     display: block;
   }
 
-  .navigation.home {
-    width: 134%;
-  }
-
-  .navigation.home.current {
-    margin-top: 0;
-
-    color: none;
-    border-bottom: none;
-  }
-
   .navigation.placeholder {
-    width: 134%;
+    width: 170%;
   }
 
   .navigation.placeholder:hover {

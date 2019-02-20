@@ -50,15 +50,16 @@ class PageEntry extends Component {
         >
           <Switch>
             {components.map((Component, i) => {
+              const i1 = i + 1;
               return (
                 <Route
-                  key={i}
-                  path={`/${Object.keys(url)[i]}`}
+                  key={i1}
+                  path={`/${Object.keys(url)[i1]}`}
                   render={props => (
                     <Component
                       {...props}
-                      key={i}
-                      navigationIndex={i}
+                      key={i1}
+                      navigationIndex={i1}
                       updateNavigationIndex={this.updateNavigationIndex}
                     />
                   )}

@@ -10,13 +10,12 @@ function NavBar(props) {
   return (
     <nav className={props.scrollOffset ? 'scrollOffset' : ''}>
       {Object.keys(url).map((key, i) => {
-        const isImage = !Array.isArray(url[key]);
-
         return (
           <Navigation
             key={key}
             name={key}
-            imgURL={isImage ? url[key] : undefined}
+            imgURL={!Array.isArray(url[key]) ? url[key] : undefined}
+            isPlaceholder={url[key].length === 0}
             selected={i === props.navigationIndex}
             scrollOffset={props.scrollOffset}
           />

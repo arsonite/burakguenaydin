@@ -94,4 +94,8 @@
   #root main footer {
     height: 10%;
   }
+  #root #bg {
+    background: none;
+    background-color: #dedede;
+  }
 }

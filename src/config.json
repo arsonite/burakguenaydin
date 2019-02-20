@@ -1,11 +1,12 @@
 {
   "api": "http://burakguenaydin.de/api",
   "url": {
+    "placeholder1": [],
     "home": "img/nav/home.svg",
     "media": ["animation", "post-processing", "graphics-design"],
     "software": ["projects", "frontend", "backend"],
     "blog": ["raspberry_pi", "arduino"],
     "contact": ["cv", "imprint", "privacy"],
-    "placeholder": []
+    "placeholder2": []
   }
 }

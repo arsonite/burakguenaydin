@@ -1,10 +1,10 @@
 /* Variables */
-/* Special navigation buttons */
-.navigation.home {
-  width: 100%;
-}
+/* Placeholder buttons */
 .navigation.placeholder {
   display: none;
+}
+.navigation.placeholder.scrollOffset:hover {
+  border-bottom: none;
 }
 /* Navigation before onScroll-event fired */
 .navigation {
@@ -32,9 +32,8 @@
   color: #ccc;
 }
 .navigation.current {
-  margin-top: -7px;
+  margin-top: 14px;
   color: #353535;
-  border-bottom: 7px solid #353535;
 }
 /* Navigation after onScroll-event fired */
 .navigation.scrollOffset {
@@ -42,10 +41,8 @@
   color: #888;
   background-color: #555;
 }
+.navigation.scrollOffset.current,
 .navigation.scrollOffset:hover {
-  background-color: #777;
-}
-.navigation.scrollOffset.current {
   margin-top: -7px;
   color: #ff8800;
   background-color: #353535;
@@ -55,16 +52,8 @@
   .navigation.placeholder {
     display: block;
   }
-  .navigation.home {
-    width: 134%;
-  }
-  .navigation.home.current {
-    margin-top: 0;
-    color: none;
-    border-bottom: none;
-  }
   .navigation.placeholder {
-    width: 134%;
+    width: 170%;
   }
   .navigation.placeholder:hover {
     cursor: default;

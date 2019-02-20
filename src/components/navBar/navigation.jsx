@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom';
 
 import './style/navigation.css';
 
+const IMG_URL = window.location.origin + '/';
+
 function Navigation(props) {
   const name =
     props.name.substring(0, 1).toUpperCase() +
     props.name.substring(1, props.name.length);
 
   const isSelected = props.selected;
-  const isHome = props.imgURL !== undefined;
-  const isPlaceholder = props.name === 'placeholder';
+  const isPlaceholder = props.isPlaceholder;
 
   return (
     <Link
@@ -18,16 +19,14 @@ function Navigation(props) {
       id={`nav_${name}`}
       className={`navigation
       ${isPlaceholder ? ' placeholder' : ''}
-      ${isHome ? ' home' : ''}
       ${props.scrollOffset ? ' scrollOffset' : ''}
       ${isSelected ? ' current' : ''}`}
     >
-      {isHome ? (
+      {props.imgURL !== undefined ? (
         <img
           src={
-            window.location.origin +
-            '/' +
-            (isSelected
+            IMG_URL +
+            (isSelected || onmouseenter
               ? props.imgURL.replace(/\.svg/g, '_s.svg')
               : props.imgURL)
           }
