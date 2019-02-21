@@ -3,8 +3,8 @@
   "url": {
     "placeholder1": [],
     "home": "img/nav/home.svg",
-    "media": ["animation", "post-processing", "graphics-design"],
-    "software": ["projects", "frontend", "backend"],
+    "media": ["animation", "graphics-design", "video-editing"],
+    "software": ["java", "c++", "web-developing", "app-development"],
     "blog": ["raspberry_pi", "arduino"],
     "contact": ["cv", "imprint", "privacy"],
     "placeholder2": []

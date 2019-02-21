@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Card from '../common/card';
+
 import './style/softwareScreen.css';
 
 class SoftwareScreen extends Component {
@@ -17,7 +19,13 @@ class SoftwareScreen extends Component {
   }
 
   render() {
-    return <div id="softwareScreen" />;
+    return (
+      <div id="softwareScreen">
+        {this.props.links.map(link => {
+          return <Card key={link} title={link} src={''} />;
+        })}
+      </div>
+    );
   }
 }
 

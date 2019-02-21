@@ -16,7 +16,7 @@ class Card extends Component {
       <div className="container">
         <div className={`card${selected ? ' selected' : ''}`}>
           <div className="title">
-            <p>Title</p>
+            <p>{this.props.title}</p>
             <div
               onClick={() => {
                 this.setState({ selected: !selected });

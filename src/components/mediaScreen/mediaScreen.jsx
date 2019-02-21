@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Card from '../common/card';
-import Thumbnail from '../common/thumbnail';
 
 import './style/mediaScreen.css';
 
@@ -22,9 +21,9 @@ class MediaScreen extends Component {
   render() {
     return (
       <div id="mediaScreen" className="screen">
-        <Card src="https://picsum.photos/1000" />
-
-        <Thumbnail src="https://picsum.photos/2000" />
+        {this.props.links.map(link => {
+          return <Card key={link} title={link} src={''} />;
+        })}
       </div>
     );
   }
