@@ -24,7 +24,7 @@
       flex-shrink: 0;
       bottom: 0;
 
-      height: 15%;
+      height: 100px;
       width: 100%;
 
       background-color: #353535;
@@ -79,7 +79,7 @@
 
         img {
           margin: 5px;
-          height: 4vw;
+          height: 25px;
         }
 
         img:hover {
@@ -114,7 +114,22 @@
   }
 }
 
-/* Responsive media query, optimized for iPhone Plus/Samsung + Size */
+@media only screen and (max-width: 590px) {
+  #root {
+    main {
+      footer {
+        .box {
+          .languages {
+            img {
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 500px) {
   #root {
     main {
@@ -125,7 +140,14 @@
       width: 100%;
 
       footer {
-        height: 10%;
+        .box {
+          .languages,
+          .images {
+            img {
+              height: 20px;
+            }
+          }
+        }
       }
     }
 

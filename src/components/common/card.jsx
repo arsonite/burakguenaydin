@@ -13,21 +13,19 @@ class Card extends Component {
     const selected = this.state.selected;
 
     return (
-      <div className="container">
-        <div className={`card${selected ? ' selected' : ''}`}>
-          <div className="title">
-            <p>{this.props.title}</p>
-            <div
-              onClick={() => {
-                this.setState({ selected: !selected });
-              }}
-            >
-              <img src={IMG_URL + 'img/arrow.svg'} alt="" />
-            </div>
+      <div className={`card${selected ? ' selected' : ''}`}>
+        <div className="title">
+          <p>{this.props.title}</p>
+          <div
+            onClick={() => {
+              this.setState({ selected: !selected });
+            }}
+          >
+            <img src={IMG_URL + 'img/arrow.svg'} alt="" />
           </div>
-          <div className="image">
-            <img src={this.props.src} alt="" />
-          </div>
+        </div>
+        <div className="image">
+          <img src={this.props.src} alt="" />
         </div>
       </div>
     );

@@ -17,7 +17,7 @@
   flex-direction: row;
   flex-shrink: 0;
   bottom: 0;
-  height: 15%;
+  height: 100px;
   width: 100%;
   background-color: #353535;
   text-align: center;
@@ -60,7 +60,7 @@
 }
 #root main footer .box img {
   margin: 5px;
-  height: 4vw;
+  height: 25px;
 }
 #root main footer .box img:hover {
   cursor: pointer;
@@ -83,7 +83,11 @@
   background-repeat: repeat;
   background-size: 10%;
 }
-/* Responsive media query, optimized for iPhone Plus/Samsung + Size */
+@media only screen and (max-width: 590px) {
+  #root main footer .box .languages img {
+    height: 20px;
+  }
+}
 @media only screen and (max-width: 500px) {
   #root main {
     top: 10%;
@@ -91,8 +95,9 @@
     padding-right: 0;
     width: 100%;
   }
-  #root main footer {
-    height: 10%;
+  #root main footer .box .languages img,
+  #root main footer .box .images img {
+    height: 20px;
   }
   #root #bg {
     background: none;
