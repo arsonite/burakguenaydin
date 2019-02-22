@@ -27,8 +27,8 @@
   transition: all 0.25s;
 }
 .listCard .title div img {
-  position: relative;
   display: block;
+  position: relative;
   box-sizing: border-box;
   top: 25%;
   margin: auto;
@@ -42,17 +42,39 @@
   color: #ff8800;
   background-color: #555;
 }
-.listCard .content {
+.listCard .content ul {
+  overflow: hidden;
   position: relative;
-  height: 0;
-  color: #00ff33;
+  max-height: 0;
   background-color: #151515;
-  transition: all 1s;
+  transition: all 0.75s;
   z-index: 0;
+}
+.listCard .content ul li {
+  padding: 2.5%;
+  color: #fff;
+  background-color: #333;
+}
+.listCard .content ul .entry {
+  background-color: #151515;
+}
+.listCard .content ul .entry:hover {
+  cursor: pointer;
+  color: #00ff33;
+  background-color: #222;
+}
+.listCard .content ul .proficiency.basic {
+  background-color: #ff4444;
+}
+.listCard .content ul .proficiency.experienced {
+  background-color: #ff8800;
+}
+.listCard .content ul .proficiency.advanced {
+  background-color: #3ccc3c;
 }
 .listCard.selected .title div img {
   transform: rotateZ(270deg);
 }
-.listCard.selected .content {
-  height: 400px;
+.listCard.selected .content ul {
+  max-height: 800px;
 }

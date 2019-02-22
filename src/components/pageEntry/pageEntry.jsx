@@ -71,45 +71,6 @@ class PageEntry extends Component {
             })}
             />
           </Switch>
-
-          <footer>
-            <div className="box">
-              <p>Contact</p>
-              <div className="contacts">
-                You have
-                <a href="mailto:guenaydin.burak@gmail.com?subject=Question&body=I have a question about you..">
-                  a question?
-                </a>
-              </div>
-            </div>
-
-            <hr />
-
-            <div className="box">
-              <p>Social</p>
-              <div className="images">
-                <a href="https://github.com/arsonite">
-                  <img src="./img/logos/github.svg" alt="" />
-                </a>
-                <a href="https://twitter.com/notarsonite">
-                  <img src="./img/logos/twitter.svg" alt="" />
-                </a>
-                <img src="./img/logos/linkedin.svg" alt="" />
-                <img src="./img/logos/xing.svg" alt="" />
-              </div>
-            </div>
-
-            <hr />
-
-            <div className="box">
-              <p>Language</p>
-              <div className="languages">
-                <img src="./img/flag_de.png" alt="" />
-                <img src="./img/flag_en.png" alt="" />
-                <img src="./img/flag_tr.png" alt="" />
-              </div>
-            </div>
-          </footer>
         </main>
 
         <div id="bg" />
@@ -119,3 +80,44 @@ class PageEntry extends Component {
 }
 
 export default PageEntry;
+
+/*
+<footer>
+  <div className="box">
+    <p>Contact</p>
+    <div className="contacts">
+      You have
+      <a href="mailto:guenaydin.burak@gmail.com?subject=Question&body=I have a question about you..">
+        a question?
+      </a>
+    </div>
+  </div>
+
+  <hr />
+
+  <div className="box">
+    <p>Social</p>
+    <div className="images">
+      <a href="https://github.com/arsonite">
+        <img src="./img/logos/github.svg" alt="" />
+      </a>
+      <a href="https://twitter.com/notarsonite">
+        <img src="./img/logos/twitter.svg" alt="" />
+      </a>
+      <img src="./img/logos/linkedin.svg" alt="" />
+      <img src="./img/logos/xing.svg" alt="" />
+    </div>
+  </div>
+
+  <hr />
+
+  <div className="box">
+    <p>Language</p>
+    <div className="languages">
+      <img src="./img/flag_de.png" alt="" />
+      <img src="./img/flag_en.png" alt="" />
+      <img src="./img/flag_tr.png" alt="" />
+    </div>
+  </div>
+</footer>
+*/

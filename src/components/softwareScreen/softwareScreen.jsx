@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import ListCard from '../common/listCard';
 
-import { software_portfolio } from '../../config.json';
+import { software_portfolio, proficiency_strings } from '../../config.json';
 
 import './style/softwareScreen.css';
 
@@ -31,11 +31,11 @@ class SoftwareScreen extends Component {
             <ListCard
               key={language}
               title={language}
-              language={arr[language]}
+              proficiency={proficiency_strings[arr[language].proficiency]}
+              list={arr[language].projects}
             />
           );
         })}
-
         <span>Other projects</span>
       </div>
     );

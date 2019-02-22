@@ -27,10 +27,29 @@ class ListCard extends Card {
           </div>
         </div>
 
-        <div className="content" />
+        <div className="content">
+          <ul>
+            <li
+              className={`proficiency ${this.props.proficiency.toLowerCase()}`}
+            >
+              <b>Proficiency: </b>
+              {this.props.proficiency}
+            </li>
+            <li>
+              <b>Projects:</b>
+            </li>
+            {this.props.list.map(entry => {
+              return (
+                <li key={entry} class="entry">
+                  {entry}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     );
   }
 }
-
+//<div className="linker">{'To projects'}</div>
 export default ListCard;

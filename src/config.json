@@ -1,5 +1,6 @@
 {
   "api": "http://burakguenaydin.de/api",
+
   "url": {
     "placeholder1": "",
     "home": "img/nav/home.svg",
@@ -9,40 +10,59 @@
     "contact": [],
     "placeholder2": ""
   },
+
+  "proficiency_strings": ["Basic", "Experienced", "Advanced"],
+
   "software_portfolio": {
     "languages": {
       "java": {
-        "level": "Experienced",
-        "proficiencies": ["Object-oriented paradigm", "Model-View-Controller"]
+        "proficiency": 2,
+        "projects": [
+          "3D-Raytracer",
+          "Project-Nightshade",
+          "TeaType-Library",
+          "Photo-parser & reorganizer",
+          "Distributed systems search algorithm",
+          "Random name generator",
+          "Secure password generator & hasher",
+          "Runtime-efficient algorithms"
+        ]
       },
       "javascript": {
-        "level": "Experienced",
-        "proficiencies": ["ECMAScript5", "ECMAScript6"]
+        "proficiency": 2,
+        "projects": [
+          "burakguenaydin.de",
+          "cafesuarez.de",
+          "WanderApp",
+          "LebPhotos",
+          "TeaType-Collection"
+        ]
       },
       "c++": {
-        "level": "Basic",
-        "proficiencies": ["Multi-Threading"]
+        "proficiency": 1,
+        "projects": ["TempoEX Reloaded", "TempoEX", "my::vector"]
       },
       "swift": {
-        "level": "Experienced",
-        "proficiencies": ["Geolocation", "MapView-API"]
+        "proficiency": 1,
+        "projects": ["Geolocation-Todo", "TicTacToe", "Basic calculator"]
       },
       "sql": {
-        "level": "Basic",
-        "proficiencies": ["Basic statements", "Multi-Table-Operations (JOIN)"]
+        "proficiency": 0,
+        "projects": ["Basic statements", "Multi-Table-Operations (JOIN)"]
       },
       "python": {
-        "level": "Basic",
-        "proficiencies": [
-          "Functional-paradigm",
-          "Writing algorithms based on runtime-efficiency"
+        "proficiency": 0,
+        "projects": [
+          "Photo-color picker & analyzer",
+          "Runtime-efficient algorithms"
         ]
       },
       "shell/bash": {
-        "level": "Basic",
-        "proficiencies": ["Model-View-Controller"]
+        "proficiency": 0,
+        "projects": [""]
       }
     },
+
     "frameworks": {
       "nodejs": [],
       "nosql/restapi": [
@@ -55,6 +75,7 @@
       "qt": [],
       "android_sdk": []
     },
+
     "other": {
       "agile": ["scrum (trello)", "version-control (git)"],
       "xml": [],
@@ -62,5 +83,6 @@
       "linux": ["NGINX", "crontab", "SSH"]
     }
   },
+
   "articles": {}
 }
