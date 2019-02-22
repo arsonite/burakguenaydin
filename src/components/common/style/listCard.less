@@ -1,0 +1,89 @@
+.listCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  height: fit-content;
+  width: 100%;
+
+  transition: all 0.5s;
+
+  .title {
+    display: flex;
+
+    height: 50px;
+    width: 100%;
+
+    background-color: #353535;
+
+    z-index: 1;
+
+    p {
+      margin: auto;
+      width: 100%;
+
+      text-align: center;
+      font-family: Cornerstone;
+      font-size: 28px;
+    }
+
+    div {
+      height: 100%;
+      width: 20%;
+
+      background-color: #444;
+
+      transition: all 0.25s;
+
+      img {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        top: 25%;
+
+        margin: auto;
+
+        height: 50%;
+        width: 50%;
+
+        transform: rotateZ(90deg);
+
+        transition: all 0.5s;
+      }
+    }
+
+    div:hover {
+      cursor: pointer;
+
+      color: #ff8800;
+      background-color: #555;
+    }
+  }
+
+  .content {
+    position: relative;
+
+    height: 0;
+
+    color: #00ff33;
+    background-color: #151515;
+
+    transition: all 1s;
+
+    z-index: 0;
+  }
+}
+
+.listCard.selected {
+  .title {
+    div {
+      img {
+        transform: rotateZ(270deg);
+      }
+    }
+  }
+
+  .content {
+    height: 400px;
+  }
+}

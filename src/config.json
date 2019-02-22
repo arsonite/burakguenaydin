@@ -1,12 +1,66 @@
 {
   "api": "http://burakguenaydin.de/api",
   "url": {
-    "placeholder1": [],
+    "placeholder1": "",
     "home": "img/nav/home.svg",
-    "media": ["animation", "graphics-design", "video-editing"],
-    "software": ["java", "c++", "web-developing", "app-development"],
-    "blog": ["raspberry_pi", "arduino"],
-    "contact": ["cv", "imprint", "privacy"],
-    "placeholder2": []
-  }
+    "media": [],
+    "software": [],
+    "blog": [],
+    "contact": [],
+    "placeholder2": ""
+  },
+  "software_portfolio": {
+    "languages": {
+      "java": {
+        "level": "Experienced",
+        "proficiencies": ["Object-oriented paradigm", "Model-View-Controller"]
+      },
+      "javascript": {
+        "level": "Experienced",
+        "proficiencies": ["ECMAScript5", "ECMAScript6"]
+      },
+      "c++": {
+        "level": "Basic",
+        "proficiencies": ["Multi-Threading"]
+      },
+      "swift": {
+        "level": "Experienced",
+        "proficiencies": ["Geolocation", "MapView-API"]
+      },
+      "sql": {
+        "level": "Basic",
+        "proficiencies": ["Basic statements", "Multi-Table-Operations (JOIN)"]
+      },
+      "python": {
+        "level": "Basic",
+        "proficiencies": [
+          "Functional-paradigm",
+          "Writing algorithms based on runtime-efficiency"
+        ]
+      },
+      "shell/bash": {
+        "level": "Basic",
+        "proficiencies": ["Model-View-Controller"]
+      }
+    },
+    "frameworks": {
+      "nodejs": [],
+      "nosql/restapi": [
+        "express.js",
+        "underscore.js",
+        "mongodb",
+        "mongoose",
+        "reactjs"
+      ],
+      "qt": [],
+      "android_sdk": []
+    },
+    "other": {
+      "agile": ["scrum (trello)", "version-control (git)"],
+      "xml": [],
+      "json": [],
+      "linux": ["NGINX", "crontab", "SSH"]
+    }
+  },
+  "articles": {}
 }

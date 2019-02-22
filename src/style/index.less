@@ -30,8 +30,11 @@
 
 body {
   overflow-x: hidden;
+  overflow-y: auto;
 
   .screen {
+    margin: 5% 0;
+
     height: fit-content;
     width: 100%;
   }
@@ -39,9 +42,17 @@ body {
   .container,
   .card,
   .thumbnail {
-    margin: 5% auto;
+    margin: 5% 0;
 
     box-shadow: @shadeL, @shadeR;
+  }
+
+  .listCard {
+    margin: 5% 0;
+
+    .content {
+      box-shadow: @shadeL, @shadeR;
+    }
   }
 }
 
