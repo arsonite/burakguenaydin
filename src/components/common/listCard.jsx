@@ -40,7 +40,7 @@ class ListCard extends Card {
             </li>
             {this.props.list.map(entry => {
               return (
-                <li key={entry} class="entry">
+                <li key={entry} className="entry">
                   {entry}
                 </li>
               );

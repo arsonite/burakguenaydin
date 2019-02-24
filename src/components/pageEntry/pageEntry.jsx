@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import NavBar from '../navBar/navBar';
 import HomeScreen from '../homeScreen/homeScreen';
@@ -34,7 +34,7 @@ class PageEntry extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div id="page">
         <div id="toast_container" />
         <NavBar
           navigationIndex={this.state.navigationIndex}
@@ -74,7 +74,7 @@ class PageEntry extends Component {
         </main>
 
         <div id="bg" />
-      </React.Fragment>
+      </div>
     );
   }
 }

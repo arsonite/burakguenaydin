@@ -1,4 +1,8 @@
-#root main {
+#page {
+  height: 100%;
+  width: 100%;
+}
+#page main {
   overflow-y: auto;
   position: fixed;
   top: 15%;
@@ -12,7 +16,7 @@
   transition: all 0.5s;
   z-index: 1;
 }
-#root main footer {
+#page main footer {
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
@@ -23,7 +27,7 @@
   text-align: center;
   z-index: 1;
 }
-#root main footer .box {
+#page main footer .box {
   display: flex;
   flex: 1 1 0;
   flex-direction: column;
@@ -32,47 +36,47 @@
   margin: 2% 0;
   color: #fff;
 }
-#root main footer .box p {
+#page main footer .box p {
   text-align: center;
   right: 0;
   left: 0;
   width: 100%;
   margin: 0 auto;
 }
-#root main footer .box .contacts,
-#root main footer .box .images,
-#root main footer .box .languages {
+#page main footer .box .contacts,
+#page main footer .box .images,
+#page main footer .box .languages {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-#root main footer .box .contacts a {
+#page main footer .box .contacts a {
   padding-left: 5px;
   color: #ff8800;
 }
-#root main footer .box .languages img {
+#page main footer .box .languages img {
   border-width: 2px;
   border-style: solid;
   border-color: transparent;
 }
-#root main footer .box .languages img:hover {
+#page main footer .box .languages img:hover {
   border-color: #fff;
 }
-#root main footer .box img {
+#page main footer .box img {
   margin: 5px;
   height: 25px;
 }
-#root main footer .box img:hover {
+#page main footer .box img:hover {
   cursor: pointer;
 }
-#root main footer hr {
+#page main footer hr {
   margin: 3% 0;
   border: 0.05em solid #444;
 }
-#root main.scrollOffset {
+#page main.scrollOffset {
   top: 5%;
 }
-#root #bg {
+#page #bg {
   position: fixed;
   top: 0;
   height: 100%;
