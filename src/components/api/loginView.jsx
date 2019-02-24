@@ -2,10 +2,12 @@ import React from 'react';
 
 import './style/loginView.css';
 
-function LoginView(props) {
+function LoginView() {
   return (
     <div id="login">
       <form>
+        <span id="label">API Login</span>
+
         <div className="input">
           <span>Username</span>
           <input placeholder="Enter username" required />

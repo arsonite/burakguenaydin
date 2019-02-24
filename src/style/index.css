@@ -45,6 +45,16 @@ body .listCard {
 body .listCard .content {
   box-shadow: 2px 0px 10px #ddd, -2px 0px 10px #ddd;
 }
+body input {
+  border: none;
+  border-radius: 25px;
+}
+body input::placeholder {
+  font-style: italic;
+}
+body input:focus {
+  outline: none;
+}
 /* Responsive media query, optimized for iPhone Plus/Samsung + Size */
 @media only screen and (max-width: 500px) {
   * {

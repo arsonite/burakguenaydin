@@ -33,6 +33,7 @@ class PageEntry extends Component {
   };
 
   render() {
+    console.log(this.state.navigationIndex);
     return (
       <div id="page">
         <div id="toast_container" />
@@ -70,6 +71,7 @@ class PageEntry extends Component {
               );
             })}
             />
+            <Redirect to={`/home`} />
           </Switch>
         </main>
 

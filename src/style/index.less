@@ -59,6 +59,19 @@ body {
       box-shadow: @shadeL, @shadeR;
     }
   }
+
+  input {
+    border: none;
+    border-radius: 25px;
+  }
+
+  input::placeholder {
+    font-style: italic;
+  }
+
+  input:focus {
+    outline: none;
+  }
 }
 
 /* Responsive media query, optimized for iPhone Plus/Samsung + Size */

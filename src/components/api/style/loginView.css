@@ -3,14 +3,22 @@
   width: 100%;
 }
 #login form {
+  position: absolute;
+  box-sizing: border-box;
+  padding: auto;
   margin: auto;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  height: 50%;
+  height: 75%;
   width: 50%;
   text-align: center;
+}
+#login form #label {
+  color: #ff8800;
+  font-family: Cornerstone;
+  font-size: 50px;
 }
 #login form .input {
   display: flex;
@@ -18,17 +26,17 @@
 }
 #login form .input span {
   padding: 5%;
-  color: #ff8800;
+  color: #eee;
   font-weight: bold;
 }
 #login form .input input {
-  padding: 2.5%;
+  padding: 2.5% 5%;
   background-color: #222;
   color: #00ff33;
-  border: none;
-  border-radius: 25px;
 }
 #login form .input input::placeholder {
   color: #444;
-  font-style: italic;
+}
+#login form .input input:hover {
+  background-color: #252525;
 }
