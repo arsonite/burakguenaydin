@@ -14,14 +14,16 @@ import './style/index.css';
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
+      <Route path={`/api`} render={props => <APIEntry {...props} />} />
+
+      <Route path={`/`} render={props => <PageEntry {...props} />} />
+
       {window.location.pathname.includes('backend') &&
       !authService.isUserLoggedIn() ? (
-        <Redirect to="/" />
-      ) : (
         ''
+      ) : (
+        <Redirect to="/" />
       )}
-      <Route path={`/api`} render={props => <APIEntry {...props} />} />
-      <Route path={`/`} render={props => <PageEntry {...props} />} />
     </Switch>
   </BrowserRouter>,
   document.getElementById('root')
