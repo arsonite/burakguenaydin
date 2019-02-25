@@ -28,8 +28,14 @@
 #registration form #register {
   background-color: #44cc44;
 }
+#registration form #register:hover {
+  background-color: #55dd55;
+}
 #registration form #back {
   background-color: #cc4444;
+}
+#registration form #back:hover {
+  background-color: #dd5555;
 }
 #registration form .input {
   display: flex;
