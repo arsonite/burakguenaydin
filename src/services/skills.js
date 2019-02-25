@@ -11,7 +11,6 @@ function getSkills() {
 }
 
 function execute() {
-  url = url.slice(0, -1);
   return http.get(url);
 }
 

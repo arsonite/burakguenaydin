@@ -9,10 +9,12 @@ import { proficiency_strings } from '../../config.json';
 import './style/softwareScreen.css';
 
 class SoftwareScreen extends Component {
+  _promiseResolved = false; //Preventing setState() memory leak
   _isMounted = false; //Preventing setState() memory leak
 
   state = {
-    skills: undefined
+    skills: undefined,
+    promiseResolved: false
   };
 
   async componentDidMount() {
@@ -20,7 +22,9 @@ class SoftwareScreen extends Component {
     this._isMounted = true;
 
     const skills = await skillService.getSkills().execute();
-    this.setState({ skills: skills });
+    this.setState({ skills: skills, promiseResolved: true }, () => {
+      console.log(skills);
+    });
   }
 
   componentWillUnmount() {
@@ -28,6 +32,7 @@ class SoftwareScreen extends Component {
   }
 
   render() {
+    if (!this.state.promiseResolved) return null;
     const arr = this.state.skills;
 
     return (
