@@ -36,19 +36,31 @@ class SoftwareScreen extends Component {
 
     return (
       <div id="softwareScreen" className="screen">
-        <span>Languages that I write in</span>
-        {Object.keys(softwareLanguages).map(index => {
-          const softwareLanguage = softwareLanguages[index];
-          return (
-            <ListCard
-              key={softwareLanguage}
-              title={softwareLanguage.name}
-              proficiency={proficiencyStrings[softwareLanguage.proficiency]}
-              list={softwareLanguage.projects}
-            />
-          );
-        })}
-        <span>Other projects</span>
+        <div className="container white">
+          <div />
+          <div />
+        </div>
+
+        <div className="container grey">
+          <div />
+          <div />
+        </div>
+
+        <div className="box">
+          <span>Languages that I write in</span>
+          {Object.keys(softwareLanguages).map(index => {
+            const softwareLanguage = softwareLanguages[index];
+            return (
+              <ListCard
+                key={index}
+                title={softwareLanguage.name}
+                proficiency={proficiencyStrings[softwareLanguage.proficiency]}
+                list={softwareLanguage.projects}
+              />
+            );
+          })}
+          <span>Other projects</span>
+        </div>
       </div>
     );
   }

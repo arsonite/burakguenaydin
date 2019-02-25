@@ -6,13 +6,11 @@
   },
 
   "nav": {
-    "placeholder1": "",
     "home": "img/nav/home.svg",
     "media": [],
     "software": [],
     "blog": [],
-    "contact": [],
-    "placeholder2": ""
+    "contact": []
   },
 
   "proficiencyStrings": ["Basic", "Experienced", "Advanced"],

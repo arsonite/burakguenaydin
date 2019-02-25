@@ -15,7 +15,6 @@ function NavBar(props) {
             key={key}
             name={key}
             imgURL={!Array.isArray(nav[key]) ? nav[key] : undefined}
-            isPlaceholder={nav[key] === ''}
             selected={i === props.navigationIndex}
             scrollOffset={props.scrollOffset}
           />

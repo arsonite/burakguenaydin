@@ -1,13 +1,36 @@
 #softwareScreen {
   display: flex;
-  align-content: flex-start;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 
-  span {
-    color: #353535;
+  height: 100%;
+  width: 100%;
 
-    font-weight: bold;
-    font-size: 20px;
+  .container {
+    width: 100%;
+    height: 400px;
+
+    margin: 5% 0;
+  }
+
+  .container.white {
+    background-color: #fff;
+  }
+
+  .container.grey {
+    background-color: #353535;
+  }
+
+  .box {
+    width: 100%;
+    height: 100%;
+
+    span {
+      color: #353535;
+
+      font-weight: bold;
+      font-size: 20px;
+    }
   }
 }

@@ -12,14 +12,12 @@ function Navigation(props) {
 
   const scrollOffset = props.scrollOffset;
   const isSelected = props.selected;
-  const isPlaceholder = props.isPlaceholder;
 
   return (
     <Link
-      to={isPlaceholder ? '#' : '/' + name.toLowerCase()}
+      to={'/' + name.toLowerCase()}
       id={`nav_${name}`}
       className={`navigation
-      ${isPlaceholder ? ' placeholder' : ''}
       ${scrollOffset ? ' scrollOffset' : ''}
       ${isSelected ? ' current' : ''}`}
     >
@@ -33,8 +31,6 @@ function Navigation(props) {
           }
           alt=""
         />
-      ) : isPlaceholder ? (
-        ''
       ) : (
         name
       )}

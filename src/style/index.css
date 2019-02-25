@@ -17,9 +17,6 @@
   font-family: Gothic;
   font-size: 14px;
 }
-.hidden {
-  display: none;
-}
 body {
   overflow-x: hidden;
   overflow-y: auto;
@@ -28,31 +25,34 @@ body #root {
   height: 100vh;
   width: 100vw;
 }
-body .screen {
+body #root .hidden {
+  display: none;
+}
+body #root .screen {
   margin: 5% 0;
   height: fit-content;
   width: 100%;
 }
-body .container,
-body .card,
-body .thumbnail {
+body #root .container,
+body #root .card,
+body #root .thumbnail {
   margin: 5% 0;
   box-shadow: 2px 0px 10px #ddd, -2px 0px 10px #ddd;
 }
-body .listCard {
+body #root .listCard {
   margin: 5% 0;
 }
-body .listCard .content {
+body #root .listCard .content {
   box-shadow: 2px 0px 10px #ddd, -2px 0px 10px #ddd;
 }
-body input {
+body #root input {
   border: none;
   border-radius: 25px;
 }
-body input::placeholder {
+body #root input::placeholder {
   font-style: italic;
 }
-body input:focus {
+body #root input:focus {
   outline: none;
 }
 /* Responsive media query, optimized for iPhone Plus/Samsung + Size */
@@ -70,6 +70,7 @@ body input:focus {
   }
   body .listCard {
     margin: 0;
+    margin-bottom: 5%;
   }
   body .listCard .content {
     box-shadow: 0px 0px 0px #000;
