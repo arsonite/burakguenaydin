@@ -2,18 +2,25 @@ import React, { Component } from 'react';
 
 import ListCard from '../common/listCard';
 
-import { software_portfolio, proficiency_strings } from '../../config.json';
+import skillService from '../../services/skills';
+
+import { proficiency_strings } from '../../config.json';
 
 import './style/softwareScreen.css';
 
 class SoftwareScreen extends Component {
   _isMounted = false; //Preventing setState() memory leak
 
-  state = {};
+  state = {
+    skills: undefined
+  };
 
-  componentDidMount() {
+  async componentDidMount() {
     this.props.updateNavigationIndex(this.props.navigationIndex);
     this._isMounted = true;
+
+    const skills = await skillService.getSkills().execute();
+    this.setState({ skills: skills });
   }
 
   componentWillUnmount() {
@@ -21,7 +28,7 @@ class SoftwareScreen extends Component {
   }
 
   render() {
-    const arr = software_portfolio.languages;
+    const arr = this.state.skills;
 
     return (
       <div id="softwareScreen" className="screen">
