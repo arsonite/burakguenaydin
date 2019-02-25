@@ -45,7 +45,9 @@ body #root .listCard {
 body #root .listCard .content {
   box-shadow: 2px 0px 10px #ddd, -2px 0px 10px #ddd;
 }
-body #root input {
+body #root input,
+body #root button {
+  outline: none;
   border: none;
   border-radius: 25px;
 }

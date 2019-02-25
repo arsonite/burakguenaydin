@@ -33,7 +33,7 @@ function getLoggedInUser() {
 }
 
 function isUserLoggedIn() {
-  return this.getCurrentUser() !== null;
+  return this.getLoggedInUser() !== null;
 }
 
 function getJWT() {

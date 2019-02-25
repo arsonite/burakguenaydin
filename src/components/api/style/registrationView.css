@@ -1,8 +1,8 @@
-#login {
+#registration {
   height: 100%;
   width: 100%;
 }
-#login form {
+#registration form {
   position: absolute;
   box-sizing: border-box;
   padding: auto;
@@ -11,39 +11,39 @@
   bottom: 0;
   right: 0;
   left: 0;
-  height: 75%;
+  height: 90%;
   width: 50%;
   text-align: center;
 }
-#login form button {
+#registration form button {
   margin: 5%;
   height: 50px;
   width: 200px;
-  background-color: #111;
   font-weight: bold;
 }
-#login form button:hover {
+#registration form button:hover {
   cursor: pointer;
   background-color: #151515;
 }
-#login form #label {
-  color: #ff8800;
-  font-family: Cornerstone;
-  font-size: 50px;
+#registration form #register {
+  background-color: #44cc44;
 }
-#login form .input {
+#registration form #back {
+  background-color: #cc4444;
+}
+#registration form .input {
   display: flex;
   flex-direction: column;
   padding: 5% 0;
 }
-#login form .input input {
+#registration form .input input {
   padding: 2.5% 5%;
   background-color: #222;
   color: #00ff33;
 }
-#login form .input input::placeholder {
+#registration form .input input::placeholder {
   color: #444;
 }
-#login form .input input:hover {
+#registration form .input input:hover {
   background-color: #252525;
 }
