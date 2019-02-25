@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 
 import ListCard from '../common/listCard';
 
-import skillService from '../../services/skills';
+import skillsService from '../../services/skillsService';
 
-import { proficiency_strings } from '../../config.json';
+import { proficiencyStrings } from '../../config.json';
 
 import './style/softwareScreen.css';
 
 class SoftwareScreen extends Component {
-  _promiseResolved = false; //Preventing setState() memory leak
   _isMounted = false; //Preventing setState() memory leak
 
   state = {
@@ -21,9 +20,9 @@ class SoftwareScreen extends Component {
     this.props.updateNavigationIndex(this.props.navigationIndex);
     this._isMounted = true;
 
-    const skills = await skillService.getSkills().execute();
-    this.setState({ skills: skills, promiseResolved: true }, () => {
-      console.log(skills);
+    const skills = await skillsService.getSkills().execute();
+    this.setState({ skills: skills.data, promiseResolved: true }, () => {
+      console.log('Promise resolved.');
     });
   }
 
@@ -33,18 +32,19 @@ class SoftwareScreen extends Component {
 
   render() {
     if (!this.state.promiseResolved) return null;
-    const arr = this.state.skills;
+    const softwareLanguages = this.state.skills;
 
     return (
       <div id="softwareScreen" className="screen">
         <span>Languages that I write in</span>
-        {Object.keys(arr).map(language => {
+        {Object.keys(softwareLanguages).map(index => {
+          const softwareLanguage = softwareLanguages[index];
           return (
             <ListCard
-              key={language}
-              title={language}
-              proficiency={proficiency_strings[arr[language].proficiency]}
-              list={arr[language].projects}
+              key={softwareLanguage}
+              title={softwareLanguage.name}
+              proficiency={proficiencyStrings[softwareLanguage.proficiency]}
+              list={softwareLanguage.projects}
             />
           );
         })}

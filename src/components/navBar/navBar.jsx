@@ -2,20 +2,20 @@ import React from 'react';
 
 import Navigation from './navigation';
 
-import { url } from '../../config.json';
+import { nav } from '../../config.json';
 
 import './style/navBar.css';
 
 function NavBar(props) {
   return (
     <nav className={props.scrollOffset ? 'scrollOffset' : ''}>
-      {Object.keys(url).map((key, i) => {
+      {Object.keys(nav).map((key, i) => {
         return (
           <Navigation
             key={key}
             name={key}
-            imgURL={!Array.isArray(url[key]) ? url[key] : undefined}
-            isPlaceholder={url[key] === ''}
+            imgURL={!Array.isArray(nav[key]) ? nav[key] : undefined}
+            isPlaceholder={nav[key] === ''}
             selected={i === props.navigationIndex}
             scrollOffset={props.scrollOffset}
           />

@@ -8,7 +8,7 @@ import SoftwareScreen from '../softwareScreen/softwareScreen';
 import HardwareScreen from '../hardwareScreen/hardwareScreen';
 import ContactScreen from '../contactScreen/contactScreen';
 
-import { url } from '../../config.json';
+import { nav } from '../../config.json';
 
 import './style/pageEntry.css';
 
@@ -33,7 +33,6 @@ class PageEntry extends Component {
   };
 
   render() {
-    console.log(this.state.navigationIndex);
     return (
       <div id="page">
         <div id="toast_container" />
@@ -52,7 +51,7 @@ class PageEntry extends Component {
           <Switch>
             {components.map((Component, i) => {
               const i1 = i + 1;
-              const key = Object.keys(url)[i1];
+              const key = Object.keys(nav)[i1];
 
               return (
                 <Route
@@ -62,7 +61,7 @@ class PageEntry extends Component {
                     <Component
                       {...props}
                       key={i1}
-                      links={url[key]}
+                      links={nav[key]}
                       navigationIndex={i1}
                       updateNavigationIndex={this.updateNavigationIndex}
                     />

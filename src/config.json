@@ -1,9 +1,11 @@
 {
-  "uri": "http://burakguenaydin.de/",
-  "api": "http://burakguenaydin.de/api",
-  "backend": "http://burakguenaydin.de/backend",
+  "URL": {
+    "uri": "http://burakguenaydin.de/",
+    "api": "http://burakguenaydin.de/api",
+    "backend": "http://burakguenaydin.de/backend"
+  },
 
-  "url": {
+  "nav": {
     "placeholder1": "",
     "home": "img/nav/home.svg",
     "media": [],
@@ -13,5 +15,11 @@
     "placeholder2": ""
   },
 
-  "proficiency_strings": ["Basic", "Experienced", "Advanced"]
+  "proficiencyStrings": ["Basic", "Experienced", "Advanced"],
+
+  "supportedLanguages": {
+    "en": "English",
+    "de": "Deutsch",
+    "tr": "Türkce"
+  }
 }
