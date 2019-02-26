@@ -1,0 +1,16 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0;
+}
+.input input {
+  padding: 2.5% 5%;
+  background-color: #222;
+  color: #00ff33;
+}
+.input input::placeholder {
+  color: #444;
+}
+.input input:hover {
+  background-color: #252525;
+}

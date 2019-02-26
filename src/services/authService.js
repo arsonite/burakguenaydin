@@ -9,8 +9,11 @@ const key = 'token';
 
 setJWT();
 
-async function login(email, password) {
-  const { data: jwt } = await httpService.post(requestURL, { email, password });
+async function login(username, password) {
+  const jwt = await httpService.post(requestURL, {
+    username,
+    password
+  });
   localStorage.setItem(key, jwt);
 }
 

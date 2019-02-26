@@ -31,19 +31,3 @@
   font-family: Cornerstone;
   font-size: 50px;
 }
-#login form .input {
-  display: flex;
-  flex-direction: column;
-  padding: 5% 0;
-}
-#login form .input input {
-  padding: 2.5% 5%;
-  background-color: #222;
-  color: #00ff33;
-}
-#login form .input input::placeholder {
-  color: #444;
-}
-#login form .input input:hover {
-  background-color: #252525;
-}

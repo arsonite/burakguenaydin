@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 import API from './api';
-import LoginView from './loginView';
-import RegistrationView from './registrationView';
+import LoginScreen from './loginScreen';
+import RegistrationScreen from './registrationScreen';
 
 import authService from '../../services/authService';
 
@@ -21,12 +21,12 @@ class APIEntry extends Component {
         <Switch>
           <Route
             path={`/api/login`}
-            render={props => <LoginView {...props} />}
+            render={props => <LoginScreen {...props} />}
           />
 
           <Route
             path={`/api/registration`}
-            render={props => <RegistrationView {...props} />}
+            render={props => <RegistrationScreen {...props} />}
           />
           {authService.isUserLoggedIn() ? <Redirect to="/api/login" /> : ''}
 
