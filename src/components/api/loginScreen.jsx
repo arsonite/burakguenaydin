@@ -14,14 +14,12 @@ class LoginView extends Component {
 
   submit = async () => {
     try {
-      const login = this.state.login;
-      await authService.login(login.username, login.password);
+      const data = this.state.data;
+      await authService.login(data.username, data.password);
       this.props.history.push('/api');
     } catch (exception) {
       if (exception.response && exception.response.status === 400) {
-        const errors = { ...this.state.errors };
-        errors.data = exception.response.data;
-        this.setState({ err: errors });
+        console.log(exception.response.data);
       }
     }
   };
@@ -29,9 +27,7 @@ class LoginView extends Component {
   change = ({ currentTarget: input }) => {
     const data = this.state.data;
     data[input.name] = input.value;
-    this.setState({ data: data }, () => {
-      console.log(data);
-    });
+    this.setState({ data: data });
   };
 
   render() {

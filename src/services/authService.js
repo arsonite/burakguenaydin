@@ -14,6 +14,7 @@ async function login(username, password) {
     username,
     password
   });
+  console.log(jwt);
   localStorage.setItem(key, jwt);
 }
 
