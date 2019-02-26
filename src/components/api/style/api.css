@@ -26,7 +26,7 @@
   list-style-type: none;
 }
 #api #control #navBar ul li {
-  padding: 2.5vh 5vw;
+  padding: 20px 40px;
   color: #fff;
   font-size: 20px;
 }
@@ -43,10 +43,9 @@
   background-color: #dd4444;
 }
 #api #control #content {
-  overflow-x: hidden;
-  overflow-y: auto;
+  margin-left: 205px;
+  margin-right: 5%;
   height: fit-content;
-  width: 100%;
 }
 #api #control #content .box {
   margin-bottom: 5%;
