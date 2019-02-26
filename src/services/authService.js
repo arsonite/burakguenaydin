@@ -7,19 +7,20 @@ import { URL } from '../config.json';
 const requestURL = URL.backend + '/login';
 const key = 'token';
 
-setJWT();
+httpService.setJWTToken(getJWT());
 
 async function login(username, password) {
-  const jwt = await httpService.post(requestURL, {
+  const { data: jwt } = await httpService.post(requestURL, {
     username,
     password
   });
   localStorage.setItem(key, jwt);
+  httpService.setJWTToken(getJWT());
 }
 
 function loginWithJWT(jwt) {
   localStorage.setItem(key, jwt);
-  setJWT();
+  httpService.setJWTToken(getJWT());
 }
 
 function logout() {
@@ -31,7 +32,7 @@ function getLoggedInUser() {
     const jwt = localStorage.getItem(key);
     return jwtDecode(jwt);
   } catch (exception) {
-    return exception;
+    return null;
   }
 }
 
@@ -43,16 +44,11 @@ function getJWT() {
   return localStorage.getItem(key);
 }
 
-function setJWT() {
-  httpService.setJWTToken(getJWT());
-}
-
 export default {
   login,
   loginWithJWT,
   logout,
   getLoggedInUser,
   isUserLoggedIn,
-  getJWT,
-  setJWT
+  getJWT
 };
