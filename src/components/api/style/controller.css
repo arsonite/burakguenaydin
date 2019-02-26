@@ -1,0 +1,27 @@
+/* Variables */
+#navBar {
+  position: fixed;
+  margin: 2.5% !important;
+  height: fit-content;
+  width: 200px;
+  background-color: #151515;
+  box-shadow: 1px 0px 4px #000, -1px 0px 4px #000;
+}
+#navBar ul {
+  display: table;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 0;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+}
+#navBar ul li {
+  padding: 10%;
+  font-size: 20px;
+}
+#navBar ul li:hover {
+  cursor: pointer;
+  color: #00ff33;
+  background-color: #252525;
+}

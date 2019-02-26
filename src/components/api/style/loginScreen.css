@@ -16,14 +16,12 @@
   text-align: center;
 }
 #login form button {
-  margin: 5%;
+  margin: 5% auto;
   height: 50px;
   width: 200px;
   background-color: #111;
-  font-weight: bold;
 }
 #login form button:hover {
-  cursor: pointer;
   background-color: #151515;
 }
 #login form #label {

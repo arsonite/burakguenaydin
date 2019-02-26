@@ -51,6 +51,12 @@ body #root button {
   border: none;
   border-radius: 25px;
 }
+body #root button {
+  font-weight: bold;
+}
+body #root button:hover {
+  cursor: pointer;
+}
 body #root input::placeholder {
   font-style: italic;
 }

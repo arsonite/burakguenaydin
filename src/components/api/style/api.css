@@ -1,7 +1,57 @@
-#navBar {
+/* Variables */
+#api {
+  height: 100vh;
+  width: 100vw;
+  background-color: #353535;
+}
+#api #control {
+  overflow-y: auto;
+  padding: 2.5%;
+  padding-bottom: 0;
+  height: fit-content;
+  background-color: #353535;
+}
+#api #control #navBar {
   position: fixed;
-  margin: 5%;
-  height: 200px;
-  width: 200px;
-  background-color: #222;
+  background-color: #151515;
+  box-shadow: 1px 0px 4px #000, -1px 0px 4px #000;
+}
+#api #control #navBar ul {
+  display: table;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 0;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+}
+#api #control #navBar ul li {
+  padding: 2.5vh 5vw;
+  color: #fff;
+  font-size: 20px;
+}
+#api #control #navBar ul li:hover {
+  cursor: pointer;
+  color: #00ff33;
+  background-color: #252525;
+}
+#api #control #navBar ul #logout {
+  background-color: #cc3333;
+}
+#api #control #navBar ul #logout:hover {
+  color: #fff;
+  background-color: #dd4444;
+}
+#api #control #content {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: fit-content;
+  width: 100%;
+}
+#api #control #content .box {
+  margin-bottom: 5%;
+  height: 400px;
+  width: 100%;
+  background-color: #151515;
+  box-shadow: 1px 0px 4px #000, -1px 0px 4px #000;
 }

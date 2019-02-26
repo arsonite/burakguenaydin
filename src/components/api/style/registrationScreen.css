@@ -16,13 +16,11 @@
   text-align: center;
 }
 #registration form button {
-  margin: 5%;
+  margin: 5% auto;
   height: 50px;
   width: 200px;
-  font-weight: bold;
 }
 #registration form button:hover {
-  cursor: pointer;
   background-color: #151515;
 }
 #registration form #register {
