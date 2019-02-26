@@ -31,6 +31,8 @@ class LoginView extends Component {
   };
 
   render() {
+    if (authService.isUserLoggedIn()) this.props.history.push('/api');
+
     return (
       <div id="login">
         <form onSubmit={this.submit}>

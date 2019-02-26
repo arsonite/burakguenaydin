@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 
 import Input from '../common/input';
 
@@ -33,6 +34,8 @@ class RegistrationView extends Component {
   };
 
   render() {
+    if (authService.isUserLoggedIn()) return <Redirect to="/api" />;
+
     return (
       <div id="registration">
         <form>

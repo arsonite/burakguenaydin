@@ -14,7 +14,6 @@ async function login(username, password) {
     username,
     password
   });
-  console.log(jwt);
   localStorage.setItem(key, jwt);
 }
 
@@ -37,7 +36,7 @@ function getLoggedInUser() {
 }
 
 function isUserLoggedIn() {
-  return this.getLoggedInUser() !== null;
+  return getLoggedInUser() !== null;
 }
 
 function getJWT() {
@@ -53,7 +52,7 @@ export default {
   loginWithJWT,
   logout,
   getLoggedInUser,
+  isUserLoggedIn,
   getJWT,
-  setJWT,
-  isUserLoggedIn
+  setJWT
 };
