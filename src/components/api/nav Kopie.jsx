@@ -10,8 +10,8 @@ import './style/api.css';
 
 class API extends Component {
   componentDidMount() {
-    document.title = document.title.replace(/\|.*/g, '');
     document.title = 'Burak Günaydin | API';
+    document.title = document.title.replace(/\|.*/g, '');
   }
 
   render() {
